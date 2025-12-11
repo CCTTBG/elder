@@ -27,7 +27,7 @@ export default defineConfig([
   // ⬇⬇ 여기 추가
   {
     rules: {
-      'vue/no-multiple-template-root': 'off', // Vue 3에서는 여러 루트 허용
+      'vue/no-multiple-template-root': 'off',
     },
   },
 ])
