@@ -1,6 +1,8 @@
 <template>
     <h1>시작페이지</h1>
-    <button>시작</button>
+      <router-link to="/bossSelect">
+        <button>시작</button>
+      </router-link>
 </template>
 
 <script>

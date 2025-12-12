@@ -142,79 +142,79 @@
 
             ],
 
-        "nomal":[
+        "normal":[
                     {
-                        "id": "nomal-g-01",
+                        "id": "normal-g-01",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 노말1"
                     },
                     {
-                        "id": "nomal-g-02",
+                        "id": "normal-g-02",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 노말2"
                     },
                     {
-                        "id": "nomal-g-03",
+                        "id": "normal-g-03",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 노말3"
                     },
                     {
-                        "id": "nomal-g-04",
+                        "id": "normal-g-04",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 노말4"
                     },
                     {
-                        "id": "nomal-g-05",
+                        "id": "normal-g-05",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 노말5"
                     },
                     {
-                        "id": "nomal-y-01",
+                        "id": "normal-y-01",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 노말1"
                     },
                     {
-                        "id": "nomal-y-02",
+                        "id": "normal-y-02",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 노말2"
                     },
                     {
-                        "id": "nomal-y-03",
+                        "id": "normal-y-03",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 노말3"
                     },
                     {
-                        "id": "nomal-y-04",
+                        "id": "normal-y-04",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 노말4"
                     },
                     {
-                        "id": "nomal-y-05",
+                        "id": "normal-y-05",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 노말5"
                     },
                     {
-                        "id": "nomal-b-01",
+                        "id": "normal-b-01",
                         "color":"b",
                         "MythosIcons":["단서"],
                         "Ongoing":true,
@@ -222,7 +222,7 @@
                         "OngoingEffect":"파랑 지속1"
                     },
                     {
-                        "id": "nomal-b-02",
+                        "id": "normal-b-02",
                         "color":"b",
                         "MythosIcons":["단서","elderTokens","mapsTokens"],
                         "Ongoing":true,
@@ -234,7 +234,7 @@
                                         }
                     },
                     {
-                        "id": "nomal-b-03",
+                        "id": "normal-b-03",
                         "color":"b",
                         "MythosIcons":["단서","elderTokens"],
                         "Ongoing":true,
@@ -243,7 +243,7 @@
                         "tokenValues":  {"elderTokens":4}
                     },
                     {
-                        "id": "nomal-b-04",
+                        "id": "normal-b-04",
                         "color":"b",
                         "MythosIcons":["단서","mapsTokens"],
                         "Ongoing":true,
@@ -252,7 +252,7 @@
                         "tokenValues":  {"mapsTokens":1}
                     },
                     {
-                        "id": "nomal-b-05",
+                        "id": "normal-b-05",
                         "color":"b",
                         "MythosIcons":["단서","elderTokens","mapsTokens"],
                         "Ongoing":true,
