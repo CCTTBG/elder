@@ -5,5 +5,48 @@
         "doom": "12",
         "state":"0",
         "Reckoning":"1"
+    },
+
+    {
+        "id"        : "2",
+        "name"      : "이그",
+        "doom"      : "10",
+        "state"     : "0",
+        "Reckoning" : "1"
+    },
+    {
+        "id"        : "3",
+        "name"      : "이타쿠아",
+        "doom"      : "13",
+        "state"     : "0",
+        "Reckoning" : "1"
+    },
+    {
+        "id"        : "4",
+        "name"      : "옛 것",
+        "doom"      : "16",
+        "state"     : "0",
+        "Reckoning" : "0"
+    },
+    {
+        "id"        : "5",
+        "name"      : "슈브 니구라스",
+        "doom"      : "13",
+        "state"     : "0",
+        "Reckoning" : "1"
+    },
+    {
+        "id"        : "6",
+        "name"      : "아자토스",
+        "doom"      : "15",
+        "state"     : "0",
+        "Reckoning" : "0"
+    },
+    {
+        "id"        : "7",
+        "name"      : "요그 소토스",
+        "doom"      : "14",
+        "state"     : "0",
+        "Reckoning" : "1"
     }
 ]

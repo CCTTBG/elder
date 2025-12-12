@@ -1,0 +1,391 @@
+[
+    {"easy":
+            [
+                {
+                    "id": "easy-g-01",
+                    "color":"g",
+                    "MythosIcons":["징조","몬스터출현","단서"],
+                    "Ongoing":false,
+                    "effect":"녹색 이지1"
+                },
+
+                {
+                    "id": "easy-g-02",
+                    "color":"g",
+                    "MythosIcons":["징조","몬스터출현","단서"],
+                    "Ongoing":false,
+                    "effect":"녹색 이지2"
+                },
+
+                {
+                    "id": "easy-g-03",
+                    "color":"g",
+                    "MythosIcons":["징조","몬스터출현","단서"],
+                    "Ongoing":false,
+                    "effect":"녹색 이지3"
+                },
+
+                {
+                    "id": "easy-g-04",
+                    "color":"g",
+                    "MythosIcons":["징조","몬스터출현","단서"],
+                    "Ongoing":false,
+                    "effect":"녹색 이지4"
+                },
+
+                {
+                    "id": "easy-g-05",
+                    "color":"g",
+                    "MythosIcons":["징조","몬스터출현","단서"],
+                    "Ongoing":false,
+                    "effect":"녹색 이지5"
+                },
+
+                {
+                    "id": "easy-y-01",
+                    "color":"y",
+                    "MythosIcons":["징조","응보","차원문"],
+                    "Ongoing":false,
+                    "effect":"노랑 이지1"
+                },
+
+                {
+                    "id": "easy-y-02",
+                    "color":"y",
+                    "MythosIcons":["징조","응보","차원문"],
+                    "Ongoing":false,
+                    "effect":"노랑 이지2"
+                },
+
+                {
+                    "id": "easy-y-03",
+                    "color":"y",
+                    "MythosIcons":["징조","응보","차원문"],
+                    "Ongoing":false,
+                    "effect":"노랑 이지3"
+                },
+
+                {
+                    "id": "easy-y-04",
+                    "color":"y",
+                    "MythosIcons":["징조","응보","차원문"],
+                    "Ongoing":false,
+                    "effect":"노랑 이지4"
+                },
+
+                {
+                    "id": "easy-y-05",
+                    "color":"y",
+                    "MythosIcons":["징조","응보","차원문"],
+                    "Ongoing":false,
+                    "effect":"노랑 이지5"
+                },
+
+                {
+                    "id": "easy-b-01",
+                    "color":"b",
+                    "MythosIcons":["단서"],
+                    "Ongoing":true,
+                    "effect":"파랑 이지1",
+                    "OngoingEffect":"파랑 지속1"
+                },
+
+                {
+                    "id": "easy-b-02",
+                    "color":"b",
+                    "MythosIcons":["단서","elderTokens","mapsTokens"],
+                    "Ongoing":true,
+                    "effect":"파랑 이지2",
+                    "OngoingEffect":"파랑 지속2",
+                    "tokenValues":  {
+                                        "elderTokens":6,
+                                        "mapsTokens":5
+                                    }
+                },
+
+
+                {
+                    "id": "easy-b-03",
+                    "color":"b",
+                    "MythosIcons":["단서","elderTokens"],
+                    "Ongoing":true,
+                    "effect":"파랑 이지3",
+                    "OngoingEffect":"파랑 지속3",
+                    "tokenValues":  {"elderTokens":4}
+                },
+
+
+                {
+                    "id": "easy-b-04",
+                    "color":"b",
+                    "MythosIcons":["단서","mapsTokens"],
+                    "Ongoing":true,
+                    "effect":"파랑 이지4",
+                    "OngoingEffect":"파랑 지속4",
+                    "tokenValues":  {"mapsTokens":1}
+
+                },
+
+
+                {
+                    "id": "easy-b-05",
+                    "color":"b",
+                    "MythosIcons":["단서","elderTokens","mapsTokens"],
+                    "Ongoing":true,
+                    "effect":"파랑 이지5",
+                    "OngoingEffect":"파랑 지속5",
+                    "tokenValues":  {
+                                        "elderTokens":8,
+                                        "mapsTokens":20
+                                    }
+                }
+
+            ],
+
+        "nomal":[
+                    {
+                        "id": "nomal-g-01",
+                        "color":"g",
+                        "MythosIcons":["징조","몬스터출현","단서"],
+                        "Ongoing":false,
+                        "effect":"녹색 노말1"
+                    },
+                    {
+                        "id": "nomal-g-02",
+                        "color":"g",
+                        "MythosIcons":["징조","몬스터출현","단서"],
+                        "Ongoing":false,
+                        "effect":"녹색 노말2"
+                    },
+                    {
+                        "id": "nomal-g-03",
+                        "color":"g",
+                        "MythosIcons":["징조","몬스터출현","단서"],
+                        "Ongoing":false,
+                        "effect":"녹색 노말3"
+                    },
+                    {
+                        "id": "nomal-g-04",
+                        "color":"g",
+                        "MythosIcons":["징조","몬스터출현","단서"],
+                        "Ongoing":false,
+                        "effect":"녹색 노말4"
+                    },
+                    {
+                        "id": "nomal-g-05",
+                        "color":"g",
+                        "MythosIcons":["징조","몬스터출현","단서"],
+                        "Ongoing":false,
+                        "effect":"녹색 노말5"
+                    },
+                    {
+                        "id": "nomal-y-01",
+                        "color":"y",
+                        "MythosIcons":["징조","응보","차원문"],
+                        "Ongoing":false,
+                        "effect":"노랑 노말1"
+                    },
+                    {
+                        "id": "nomal-y-02",
+                        "color":"y",
+                        "MythosIcons":["징조","응보","차원문"],
+                        "Ongoing":false,
+                        "effect":"노랑 노말2"
+                    },
+                    {
+                        "id": "nomal-y-03",
+                        "color":"y",
+                        "MythosIcons":["징조","응보","차원문"],
+                        "Ongoing":false,
+                        "effect":"노랑 노말3"
+                    },
+                    {
+                        "id": "nomal-y-04",
+                        "color":"y",
+                        "MythosIcons":["징조","응보","차원문"],
+                        "Ongoing":false,
+                        "effect":"노랑 노말4"
+                    },
+                    {
+                        "id": "nomal-y-05",
+                        "color":"y",
+                        "MythosIcons":["징조","응보","차원문"],
+                        "Ongoing":false,
+                        "effect":"노랑 노말5"
+                    },
+                    {
+                        "id": "nomal-b-01",
+                        "color":"b",
+                        "MythosIcons":["단서"],
+                        "Ongoing":true,
+                        "effect":"파랑 노말1",
+                        "OngoingEffect":"파랑 지속1"
+                    },
+                    {
+                        "id": "nomal-b-02",
+                        "color":"b",
+                        "MythosIcons":["단서","elderTokens","mapsTokens"],
+                        "Ongoing":true,
+                        "effect":"파랑 노말2",
+                        "OngoingEffect":"파랑 지속2",
+                        "tokenValues":  {
+                                            "elderTokens":6,
+                                            "mapsTokens":5
+                                        }
+                    },
+                    {
+                        "id": "nomal-b-03",
+                        "color":"b",
+                        "MythosIcons":["단서","elderTokens"],
+                        "Ongoing":true,
+                        "effect":"파랑 노말3",
+                        "OngoingEffect":"파랑 지속3",
+                        "tokenValues":  {"elderTokens":4}
+                    },
+                    {
+                        "id": "nomal-b-04",
+                        "color":"b",
+                        "MythosIcons":["단서","mapsTokens"],
+                        "Ongoing":true,
+                        "effect":"파랑 노말4",
+                        "OngoingEffect":"파랑 지속4",
+                        "tokenValues":  {"mapsTokens":1}
+                    },
+                    {
+                        "id": "nomal-b-05",
+                        "color":"b",
+                        "MythosIcons":["단서","elderTokens","mapsTokens"],
+                        "Ongoing":true,
+                        "effect":"파랑 노말5",
+                        "OngoingEffect":"파랑 지속5",
+                        "tokenValues":  {
+                                            "elderTokens":8,
+                                            "mapsTokens":20
+                                        }
+                    }
+                ],
+            "hard":[
+                    {
+                        "id": "hard-g-01",
+                        "color":"g",
+                        "MythosIcons":["징조","몬스터출현","단서"],
+                        "Ongoing":false,
+                        "effect":"녹색 하드1"
+                    },
+                    {
+                        "id": "hard-g-02",
+                        "color":"g",
+                        "MythosIcons":["징조","몬스터출현","단서"],
+                        "Ongoing":false,
+                        "effect":"녹색 하드2"
+                    },
+                    {
+                        "id": "hard-g-03",
+                        "color":"g",
+                        "MythosIcons":["징조","몬스터출현","단서"],
+                        "Ongoing":false,
+                        "effect":"녹색 하드3"
+                    },
+                    {
+                        "id": "hard-g-04",
+                        "color":"g",
+                        "MythosIcons":["징조","몬스터출현","단서"],
+                        "Ongoing":false,
+                        "effect":"녹색 하드4"
+                    },
+                    {
+                        "id": "hard-g-05",
+                        "color":"g",
+                        "MythosIcons":["징조","몬스터출현","단서"],
+                        "Ongoing":false,
+                        "effect":"녹색 하드5"
+                    },
+                    {
+                        "id": "hard-y-01",
+                        "color":"y",
+                        "MythosIcons":["징조","응보","차원문"],
+                        "Ongoing":false,
+                        "effect":"노랑 하드1"
+                    },
+                    {
+                        "id": "hard-y-02",
+                        "color":"y",
+                        "MythosIcons":["징조","응보","차원문"],
+                        "Ongoing":false,
+                        "effect":"노랑 하드2"
+                    },
+                    {
+                        "id": "hard-y-03",
+                        "color":"y",
+                        "MythosIcons":["징조","응보","차원문"],
+                        "Ongoing":false,
+                        "effect":"노랑 하드3"
+                    },
+                    {
+                        "id": "hard-y-04",
+                        "color":"y",
+                        "MythosIcons":["징조","응보","차원문"],
+                        "Ongoing":false,
+                        "effect":"노랑 하드4"
+                    },
+                    {
+                        "id": "hard-y-05",
+                        "color":"y",
+                        "MythosIcons":["징조","응보","차원문"],
+                        "Ongoing":false,
+                        "effect":"노랑 하드5"
+                    },
+                    {
+                        "id": "hard-b-01",
+                        "color":"b",
+                        "MythosIcons":["단서"],
+                        "Ongoing":true,
+                        "effect":"파랑 하드1",
+                        "OngoingEffect":"파랑 지속1"
+                    },
+                    {
+                        "id": "hard-b-02",
+                        "color":"b",
+                        "MythosIcons":["단서","elderTokens","mapsTokens"],
+                        "Ongoing":true,
+                        "effect":"파랑 하드2",
+                        "OngoingEffect":"파랑 지속2",
+                        "tokenValues":  {
+                                            "elderTokens":6,
+                                            "mapsTokens":5
+                                        }
+                    },
+                    {
+                        "id": "hard-b-03",
+                        "color":"b",
+                        "MythosIcons":["단서","elderTokens"],
+                        "Ongoing":true,
+                        "effect":"파랑 하드3",
+                        "OngoingEffect":"파랑 지속3",
+                        "tokenValues":  {"elderTokens":4}
+                    },
+                    {
+                        "id": "hard-b-04",
+                        "color":"b",
+                        "MythosIcons":["단서","mapsTokens"],
+                        "Ongoing":true,
+                        "effect":"파랑 하드4",
+                        "OngoingEffect":"파랑 지속4",
+                        "tokenValues":  {"mapsTokens":1}
+                    },
+                    {
+                        "id": "hard-b-05",
+                        "color":"b",
+                        "MythosIcons":["단서","elderTokens","mapsTokens"],
+                        "Ongoing":true,
+                        "effect":"파랑 하드5",
+                        "OngoingEffect":"파랑 지속5",
+                        "tokenValues":  {
+                                            "elderTokens":8,
+                                            "mapsTokens":20
+                                        }
+                    }
+            ]
+    }
+    
+]
