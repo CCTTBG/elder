@@ -1,21 +1,24 @@
 [
     {
         "id":"1",
-        "Esay":{"g":0,"y":2,"b":2},
+        "bossImage":"https://i.namu.wiki/i/faIpF68S3GHbJ-I4ONL3atyJJGw0H2jDoVCwp0-l9F9slXWTRk01HHJW8HOQt_xoEogprU3EpHVUqn_1gdAgokM7vDLR65towtK4ygUqaNWPUYKYLyUub6uMWfkrYqr32Uc3F3cYFVwuXFVjVRyJNg.webp",
+        "easy":{"g":0,"y":2,"b":2},
         "nomal":{"g":1,"y":3,"b":0},
         "hard":{"g":3,"y":4,"b":0}
     },
 
     {
         "id":"2",
-        "Esay":{"g":1,"y":2,"b":1},
+        "bossImage":"https://i.namu.wiki/i/HS76pLFkfPvteGswRhi0FHH0FOIc59yh11aAlsz4Gd6b_dXN3vmMNYxtMtEmL9kGkGf_G3zMCizPWsi1Ckzg_RGj50OhLorA6IgpBOFNLokHUJQJL34VcjUvtkI3Nx7sQ2SzptcwZ66ZJg83lXD4vg.webp",
+        "easy":{"g":1,"y":2,"b":1},
         "nomal":{"g":2,"y":3,"b":1},
         "hard":{"g":2,"y":4,"b":0}
     },
 
     {
         "id":"3",
-        "Esay": {"g": 0, "y": 2, "b": 2},
+        "bossImage":"https://i.namu.wiki/i/96K9c4yN5diKIOPxP1z4PkyxjO-KfrKkC4_r1ZILPZp_fi0YxE0EJy0I03QD_MOk11ox7lEYkRgl2_qP6PMUp87pyXMkQgSlErMosHcKdrLg6rPDnGFRnZUKi_hoRDcsRtOUAM17bSCJgM6IgiTx2Q.webp",
+        "easy": {"g": 0, "y": 2, "b": 2},
         "nomal":{"g": 4, "y": 2, "b": 0},
         "hard": {"g": 2, "y": 4, "b": 0}
     },
@@ -23,28 +26,32 @@
 
     {
         "id":"4",
-        "Esay": {"g": 2, "y": 2, "b": 1},
+        "bossImage":"https://www.gameabout.com/news/photo/202307/82980_158283_4217.jpg",
+        "easy": {"g": 2, "y": 2, "b": 1},
         "nomal":{"g": 3, "y": 3, "b": 1},
         "hard": {"g": 4, "y": 4, "b": 0}
     },
 
     {
         "id":"5",
-        "Esay": {"g": 1, "y": 2, "b": 1},
+        "bossImage":"https://i.pinimg.com/originals/85/61/7f/85617fd1767b81ef913220e7be6b6779.jpg",
+        "easy": {"g": 1, "y": 2, "b": 1},
         "nomal":{"g": 3, "y": 2, "b": 1},
         "hard": {"g": 2, "y": 4, "b": 0}
     },
 
     {
         "id":"6",
-        "Esay": {"g": 1, "y": 2, "b": 1},
+        "bossImage":"https://mblogthumb-phinf.pstatic.net/MjAyMDAxMDZfNDAg/MDAxNTc4MzAzODk3OTcy.Eq-sX5Z2s5ecEeN-DpoLobQ7nbo86Zw6D0u264ujP80g.O4s0qlwjBGWlvVPfzmyTu0sTWtXqyJYquN5cXZZqIoQg.JPEG.sellimia/%EC%95%84%EC%9E%90%ED%86%A0%EC%8A%A4.jpg?type=w420",
+        "easy": {"g": 1, "y": 2, "b": 1},
         "nomal":{"g": 2, "y": 3, "b": 1},
         "hard": {"g": 2, "y": 4, "b": 0}
     },
 
     {
         "id":"7",
-        "Esay": {"g": 0, "y": 2, "b": 1},
+        "bossImage":"https://i.namu.wiki/i/AWgLApYaMjM2k1UE2148FKXj_mkbLT4Ztr_Na6Ftsrf3vCudyYnUXT_WJLpZEllWvXpr-8U_IGLwcJDVNF16Uw.webp",
+        "easy": {"g": 0, "y": 2, "b": 1},
         "nomal":{"g": 2, "y": 3, "b": 1},
         "hard": {"g": 3, "y": 4, "b": 0}
     }
