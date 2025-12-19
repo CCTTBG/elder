@@ -24,14 +24,19 @@
       </div>
     </div>
     <div>
-        ws
+        <bossStage :bossId="selectedBossId" />
     </div>
   </div>
 
 </template>
 <script>
   import bossData from '@/assets/boss.json';
+  import bossStage from './bossStage.vue';
+
 export default {
+  components:{
+    bossStage
+  },
   data(){
       return {
         bossData:bossData,
@@ -46,65 +51,4 @@ export default {
 }
 
 </script>
-<style>
-/* 카드들을 2열로 배치 */
-.bossGrid{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(260px, 700px));
-
-}
-.bossGrids{
-  display: grid;
-  gap: 16px;
-  padding: 16px;
-}
-/* 카드 박스 */
-.bossCard{
-  border: 1px solid #222;
-  border-radius: 8px;
-  padding: 12px;
-  background: #fff;
-}
-
-.bossTable{
-  width: 100%;
-  border-collapse: collapse;
-
-}
-.bossCard:hover{
-  background-color: #ddd;
-}
-
-.bossCard.selected {
-  background-color: #ddd; /* 클릭 시 고정 */
-}
-
-.bossTable th,
-.bossTable td{
-  padding: 8px 10px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-  vertical-align: top;
-}
-
-/* 라벨(th) 폭 고정 */
-.bossTable th{
-  width: 90px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-/* 마지막 줄 border 제거 */
-.bossTable tr:last-child th,
-.bossTable tr:last-child td{
-  border-bottom: none;
-}
-
-/* 화면 좁아지면 1열 */
-@media (max-width: 700px){
-  .bossGrid{
-    grid-template-columns: 1fr;
-  }
-}
-
-</style>
+<style src="..\assets\css\bossSelected.css"></style>
