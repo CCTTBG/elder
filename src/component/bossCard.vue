@@ -46,6 +46,15 @@ export default {
   methods:{
     toggleSelect(id){
       this.selectedBossId = (this.selectedBossId === id ) ? null:id
+    },
+    handleSelect(id) {
+      // 선택 버튼: 현재 선택된 id를 그대로 진행
+      this.$emit('goGame', id)
+    },
+    handleRandom(randomId) {
+      // 랜덤 버튼: 랜덤 id로 진행 (화면 선택 상태도 같이 바꿔주면 UX 좋음)
+      this.selectedBossId = randomId
+      this.$emit('goGame', randomId)
     }
   }
 }

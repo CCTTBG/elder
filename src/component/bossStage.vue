@@ -24,6 +24,10 @@
         <b>Hard :</b>
         녹색: {{ selectedStage.hard.g }}, 황색: {{ selectedStage.hard.y }}, 청색: {{ selectedStage.hard.b }}
       </div>
+      <div>
+        <button @click="onSelect">선택</button>
+        <button @click="onRandom">랜덤</button>
+      </div>
     </div>
   </section>
 </template>
@@ -35,6 +39,7 @@ export default {
   props: {
     bossId: { type: [String, Number], default: null }
   },
+    emits: ['select', 'random'],
   data() {
     return { stageData }
   },
@@ -44,6 +49,19 @@ export default {
       // 타입 섞임 방지: 문자열로 통일 비교
       const id = String(this.bossId)
       return this.stageData.find(s => String(s.id) === id) || null
+    }
+  },
+  methods: {
+    onSelect() {
+      if (!this.bossId) return
+      this.$emit('select', String(this.bossId))
+    },
+    onRandom() {
+      // stageData 기준으로 랜덤 (현재 stageData에 존재하는 id만 뽑힘)
+      if (!this.stageData?.length) return
+      const idx = Math.floor(Math.random() * this.stageData.length)
+      const randomId = String(this.stageData[idx].id)
+      this.$emit('random', randomId)
     }
   }
 }
