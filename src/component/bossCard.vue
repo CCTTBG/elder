@@ -24,7 +24,11 @@
       </div>
     </div>
     <div>
-        <bossStage :bossId="selectedBossId" />
+      <bossStage
+        :bossId="selectedBossId"
+        @select="handleSelect"
+        @random="handleRandom"
+      />
     </div>
   </div>
 
@@ -52,10 +56,10 @@ export default {
       this.$emit('goGame', id)
     },
     handleRandom(randomId) {
-      // 랜덤 버튼: 랜덤 id로 진행 (화면 선택 상태도 같이 바꿔주면 UX 좋음)
+      if (!randomId) return
       this.selectedBossId = randomId
-      this.$emit('goGame', randomId)
-    }
+      this.$emit('goGame', String(randomId))
+    },
   }
 }
 

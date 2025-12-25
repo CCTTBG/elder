@@ -17,7 +17,7 @@
 
       <div>
         <b>Normal :</b>
-        녹색: {{ selectedStage.nomal.g }}, 황색: {{ selectedStage.nomal.y }}, 청색: {{ selectedStage.nomal.b }}
+        녹색: {{ selectedStage.normal.g }}, 황색: {{ selectedStage.normal.y }}, 청색: {{ selectedStage.normal.b }}
       </div>
 
       <div>
@@ -25,8 +25,8 @@
         녹색: {{ selectedStage.hard.g }}, 황색: {{ selectedStage.hard.y }}, 청색: {{ selectedStage.hard.b }}
       </div>
       <div>
-        <button @click="onSelect">선택</button>
-        <button @click="onRandom">랜덤</button>
+        <button @click="onSelect" :disabled="!bossId">선택</button>
+        <button @click="onRandom" :disabled="!stageData?.length">랜덤</button>
       </div>
     </div>
   </section>
