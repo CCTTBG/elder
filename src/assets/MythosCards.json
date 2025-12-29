@@ -1,8 +1,8 @@
-[
+
     {"easy":
             [
                 {
-                    "id": "easy-g-01",
+                    "cardId": "easy-g-01",
                     "color":"g",
                     "MythosIcons":["징조","몬스터출현","단서"],
                     "Ongoing":false,
@@ -10,7 +10,7 @@
                 },
 
                 {
-                    "id": "easy-g-02",
+                    "cardId": "easy-g-02",
                     "color":"g",
                     "MythosIcons":["징조","몬스터출현","단서"],
                     "Ongoing":false,
@@ -18,7 +18,7 @@
                 },
 
                 {
-                    "id": "easy-g-03",
+                    "cardId": "easy-g-03",
                     "color":"g",
                     "MythosIcons":["징조","몬스터출현","단서"],
                     "Ongoing":false,
@@ -26,7 +26,7 @@
                 },
 
                 {
-                    "id": "easy-g-04",
+                    "cardId": "easy-g-04",
                     "color":"g",
                     "MythosIcons":["징조","몬스터출현","단서"],
                     "Ongoing":false,
@@ -34,7 +34,7 @@
                 },
 
                 {
-                    "id": "easy-g-05",
+                    "cardId": "easy-g-05",
                     "color":"g",
                     "MythosIcons":["징조","몬스터출현","단서"],
                     "Ongoing":false,
@@ -42,7 +42,7 @@
                 },
 
                 {
-                    "id": "easy-y-01",
+                    "cardId": "easy-y-01",
                     "color":"y",
                     "MythosIcons":["징조","응보","차원문"],
                     "Ongoing":false,
@@ -50,7 +50,7 @@
                 },
 
                 {
-                    "id": "easy-y-02",
+                    "cardId": "easy-y-02",
                     "color":"y",
                     "MythosIcons":["징조","응보","차원문"],
                     "Ongoing":false,
@@ -58,7 +58,7 @@
                 },
 
                 {
-                    "id": "easy-y-03",
+                    "cardId": "easy-y-03",
                     "color":"y",
                     "MythosIcons":["징조","응보","차원문"],
                     "Ongoing":false,
@@ -66,7 +66,7 @@
                 },
 
                 {
-                    "id": "easy-y-04",
+                    "cardId": "easy-y-04",
                     "color":"y",
                     "MythosIcons":["징조","응보","차원문"],
                     "Ongoing":false,
@@ -74,7 +74,7 @@
                 },
 
                 {
-                    "id": "easy-y-05",
+                    "cardId": "easy-y-05",
                     "color":"y",
                     "MythosIcons":["징조","응보","차원문"],
                     "Ongoing":false,
@@ -82,7 +82,7 @@
                 },
 
                 {
-                    "id": "easy-b-01",
+                    "cardId": "easy-b-01",
                     "color":"b",
                     "MythosIcons":["단서"],
                     "Ongoing":true,
@@ -91,7 +91,7 @@
                 },
 
                 {
-                    "id": "easy-b-02",
+                    "cardId": "easy-b-02",
                     "color":"b",
                     "MythosIcons":["단서","elderTokens","mapsTokens"],
                     "Ongoing":true,
@@ -105,7 +105,7 @@
 
 
                 {
-                    "id": "easy-b-03",
+                    "cardId": "easy-b-03",
                     "color":"b",
                     "MythosIcons":["단서","elderTokens"],
                     "Ongoing":true,
@@ -116,7 +116,7 @@
 
 
                 {
-                    "id": "easy-b-04",
+                    "cardId": "easy-b-04",
                     "color":"b",
                     "MythosIcons":["단서","mapsTokens"],
                     "Ongoing":true,
@@ -128,7 +128,7 @@
 
 
                 {
-                    "id": "easy-b-05",
+                    "cardId": "easy-b-05",
                     "color":"b",
                     "MythosIcons":["단서","elderTokens","mapsTokens"],
                     "Ongoing":true,
@@ -144,77 +144,77 @@
 
         "normal":[
                     {
-                        "id": "normal-g-01",
+                        "cardId": "normal-g-01",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 노말1"
                     },
                     {
-                        "id": "normal-g-02",
+                        "cardId": "normal-g-02",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 노말2"
                     },
                     {
-                        "id": "normal-g-03",
+                        "cardId": "normal-g-03",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 노말3"
                     },
                     {
-                        "id": "normal-g-04",
+                        "cardId": "normal-g-04",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 노말4"
                     },
                     {
-                        "id": "normal-g-05",
+                        "cardId": "normal-g-05",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 노말5"
                     },
                     {
-                        "id": "normal-y-01",
+                        "cardId": "normal-y-01",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 노말1"
                     },
                     {
-                        "id": "normal-y-02",
+                        "cardId": "normal-y-02",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 노말2"
                     },
                     {
-                        "id": "normal-y-03",
+                        "cardId": "normal-y-03",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 노말3"
                     },
                     {
-                        "id": "normal-y-04",
+                        "cardId": "normal-y-04",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 노말4"
                     },
                     {
-                        "id": "normal-y-05",
+                        "cardId": "normal-y-05",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 노말5"
                     },
                     {
-                        "id": "normal-b-01",
+                        "cardId": "normal-b-01",
                         "color":"b",
                         "MythosIcons":["단서"],
                         "Ongoing":true,
@@ -222,7 +222,7 @@
                         "OngoingEffect":"파랑 지속1"
                     },
                     {
-                        "id": "normal-b-02",
+                        "cardId": "normal-b-02",
                         "color":"b",
                         "MythosIcons":["단서","elderTokens","mapsTokens"],
                         "Ongoing":true,
@@ -234,7 +234,7 @@
                                         }
                     },
                     {
-                        "id": "normal-b-03",
+                        "cardId": "normal-b-03",
                         "color":"b",
                         "MythosIcons":["단서","elderTokens"],
                         "Ongoing":true,
@@ -243,7 +243,7 @@
                         "tokenValues":  {"elderTokens":4}
                     },
                     {
-                        "id": "normal-b-04",
+                        "cardId": "normal-b-04",
                         "color":"b",
                         "MythosIcons":["단서","mapsTokens"],
                         "Ongoing":true,
@@ -252,7 +252,7 @@
                         "tokenValues":  {"mapsTokens":1}
                     },
                     {
-                        "id": "normal-b-05",
+                        "cardId": "normal-b-05",
                         "color":"b",
                         "MythosIcons":["단서","elderTokens","mapsTokens"],
                         "Ongoing":true,
@@ -266,77 +266,77 @@
                 ],
             "hard":[
                     {
-                        "id": "hard-g-01",
+                        "cardId": "hard-g-01",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 하드1"
                     },
                     {
-                        "id": "hard-g-02",
+                        "cardId": "hard-g-02",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 하드2"
                     },
                     {
-                        "id": "hard-g-03",
+                        "cardId": "hard-g-03",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 하드3"
                     },
                     {
-                        "id": "hard-g-04",
+                        "cardId": "hard-g-04",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 하드4"
                     },
                     {
-                        "id": "hard-g-05",
+                        "cardId": "hard-g-05",
                         "color":"g",
                         "MythosIcons":["징조","몬스터출현","단서"],
                         "Ongoing":false,
                         "effect":"녹색 하드5"
                     },
                     {
-                        "id": "hard-y-01",
+                        "cardId": "hard-y-01",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 하드1"
                     },
                     {
-                        "id": "hard-y-02",
+                        "cardId": "hard-y-02",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 하드2"
                     },
                     {
-                        "id": "hard-y-03",
+                        "cardId": "hard-y-03",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 하드3"
                     },
                     {
-                        "id": "hard-y-04",
+                        "cardId": "hard-y-04",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 하드4"
                     },
                     {
-                        "id": "hard-y-05",
+                        "cardId": "hard-y-05",
                         "color":"y",
                         "MythosIcons":["징조","응보","차원문"],
                         "Ongoing":false,
                         "effect":"노랑 하드5"
                     },
                     {
-                        "id": "hard-b-01",
+                        "cardId": "hard-b-01",
                         "color":"b",
                         "MythosIcons":["단서"],
                         "Ongoing":true,
@@ -344,7 +344,7 @@
                         "OngoingEffect":"파랑 지속1"
                     },
                     {
-                        "id": "hard-b-02",
+                        "cardId": "hard-b-02",
                         "color":"b",
                         "MythosIcons":["단서","elderTokens","mapsTokens"],
                         "Ongoing":true,
@@ -356,7 +356,7 @@
                                         }
                     },
                     {
-                        "id": "hard-b-03",
+                        "cardId": "hard-b-03",
                         "color":"b",
                         "MythosIcons":["단서","elderTokens"],
                         "Ongoing":true,
@@ -365,7 +365,7 @@
                         "tokenValues":  {"elderTokens":4}
                     },
                     {
-                        "id": "hard-b-04",
+                        "cardId": "hard-b-04",
                         "color":"b",
                         "MythosIcons":["단서","mapsTokens"],
                         "Ongoing":true,
@@ -374,7 +374,7 @@
                         "tokenValues":  {"mapsTokens":1}
                     },
                     {
-                        "id": "hard-b-05",
+                        "cardId": "hard-b-05",
                         "color":"b",
                         "MythosIcons":["단서","elderTokens","mapsTokens"],
                         "Ongoing":true,
@@ -387,5 +387,3 @@
                     }
             ]
     }
-    
-]
