@@ -14,23 +14,42 @@
 
 <script>
 import mythosCardDeck from './mythosCardDeck.vue'
-
+import bossStages from '@/assets/bossStage.json';
 export default {
   components: { mythosCardDeck },
   props: { bossId: { type: String, required: true } },
 
   data() {
     return {
-      mythosTurns: 0,      // 신화 단계 진행 횟수
-      drawnTotal: 0        // 총 뽑은 카드 수(원하면 사용)
+      mythosTurns: 1,      // 신화 단계 진행 횟수
+      drawnTotal: 0,        // 총 뽑은 카드 수(원하면 사용)
     }
   },
 
   computed: {
+    selectedStage() {
+      return bossStages.find(s => String(s.id) === String(this.bossId)) || null
+    },
+
+    bossEasyTotal() {
+      const e = this.selectedStage?.easy
+      return e ? (e.g + e.y + e.b) : 0
+    },
+
+    bossNormalTotal() {
+      const n = this.selectedStage?.normal
+      return n ? (n.g + n.y + n.b) : 0
+    },
+
+    bossHardTotal() {
+      const h = this.selectedStage?.hard
+      return h ? (h.g + h.y + h.b) : 0
+    },
+
     difficulty() {
-      // 예시 규칙: 1~3턴 easy, 4~6턴 normal, 7턴부터 hard
-      if (this.mythosTurns < 3) return 'easy'
-      if (this.mythosTurns < 6) return 'normal'
+      // 누적 소모량 기준으로 승격 (예: easy 구간 → normal 구간 → hard 구간)
+      if (this.drawnTotal < this.bossEasyTotal) return 'easy'
+      if (this.drawnTotal < this.bossEasyTotal + this.bossNormalTotal) return 'normal'
       return 'hard'
     }
   },
