@@ -28,7 +28,7 @@
       </div>
 
       <!-- ✅ 좌/우 분리 표시 -->
-      <div class="twoColBoard" style="margin-top:16px;">
+      <div class="twoColBoard mythosCardScroll" style="margin-top:16px; width:300px; height: 100px; sc">
         <div class="head">일반</div>
         <div class="head">지속</div>
 
@@ -36,17 +36,21 @@
           <!-- 왼쪽: 일반 -->
           <div class="cell">
             <template v-if="!card.Ongoing">
+              <span>{{ card.drawTurn }} 턴</span>
               <b>{{ card.id }}</b> ({{ card.color }})
               <div>효과: {{ card.effect }}</div>
+              <button>해결</button>
             </template>
           </div>
 
           <!-- 오른쪽: 지속 -->
           <div class="cell">
             <template v-if="card.Ongoing">
+              <span>{{ card.drawTurn }} 턴</span>
               <b>{{ card.id }}</b> ({{ card.color }})
               <div>효과: {{ card.effect }}</div>
               <div class="ongoingText">지속: {{ card.OngoingEffect }}</div>
+              <button>해결</button>
             </template>
           </div>
         </div>
@@ -71,7 +75,7 @@ export default {
       mythosTurns: 0,
       stageOrder: ['easy', 'normal', 'hard'],
       stageIdx: 0,
-
+      mythosTurnsHistory:[],
       // stage별 남은 카운트 (bossStage에서 복제해서 씀)
       remaining: {
         easy: { g: 0, y: 0, b: 0 },
@@ -184,12 +188,18 @@ export default {
         this.isGameOver = true
         return
       }
+          // ✅ 이번에 뽑힌 “턴 번호”
+      const turn = this.mythosTurns + 1
 
+      // ✅ 원본 객체 공유 방지 + 카드에 턴 정보 부여
+      const cardWithTurn = { ...card, drawTurn: turn }
       // ✅ 메인이 상태를 업데이트 (단일 원천)
-      this.drawnCards.push(card)
+
+      this.drawnCards.push(cardWithTurn)
       this.usedIds.add(card.id)
       this.remaining[stage][color] -= 1
       this.mythosTurns += 1
+
 
       // 혹시 이번 드로우로 stage가 0이 되었으면 다음 턴에 자동 승격되도록 유지
       this.ensureValidStage()
@@ -199,6 +209,10 @@ export default {
 </script>
 
 <style>
+  .mythosCardScroll{
+overflow-x: hidden;
+overflow-y: auto;
+  }
 .twoColBoard {
   display: grid;
   grid-template-columns: 1fr 1fr;
