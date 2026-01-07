@@ -7,6 +7,9 @@
     </div>
 
     <div v-else>
+  <div class="gameBoard">
+    <!-- 좌측: 상태/남은 카드/턴 정보 -->
+    <section class="leftZone">
       <p>신화 단계 진행 횟수: {{ mythosTurns }}</p>
       <p>현재 스테이지: <b>{{ currentStage }}</b></p>
 
@@ -18,7 +21,10 @@
           B: {{ remaining[currentStage].b }}
         </div>
       </div>
+    </section>
 
+    <!-- 중앙: 카드 뽑기 + (일반/지속 2열 보드) -->
+    <section class="centerZone">
       <button @click="drawMythos" :disabled="isGameOver">
         카드 뽑기
       </button>
@@ -27,13 +33,12 @@
         <b>더 이상 뽑을 카드가 없습니다. (Hard까지 소진)</b>
       </div>
 
-      <!-- ✅ 좌/우 분리 표시 -->
-      <div class="twoColBoard mythosCardScroll" style="margin-top:16px; width:300px; height: 100px; sc">
+      <!-- 기존 2열(일반/지속) 보드는 그대로 중앙에 둠 -->
+      <div class="twoColBoard mythosCardScroll" style="margin-top:16px;">
         <div class="head">일반</div>
         <div class="head">지속</div>
 
         <div v-for="card in drawnCards" :key="card.id" class="row">
-          <!-- 왼쪽: 일반 -->
           <div class="cell">
             <template v-if="!card.Ongoing">
               <span>{{ card.drawTurn }} 턴</span>
@@ -43,7 +48,6 @@
             </template>
           </div>
 
-          <!-- 오른쪽: 지속 -->
           <div class="cell">
             <template v-if="card.Ongoing">
               <span>{{ card.drawTurn }} 턴</span>
@@ -55,10 +59,18 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- 카드 뽑기 서비스 컴포넌트(숨김) -->
-      <mythosCardDeck ref="deck" />
-    </div>
+    <!-- 우측: “지속 카드 zone” 같은 별도 박스(지금은 비워도 됨) -->
+    <section class="rightZone">
+      <div class="zoneTitle">지속 카드 zone</div>
+      <!-- 오늘은 일단 박스만 만들어두고, 다음에 여기에 ongoing만 따로 렌더링해도 됨 -->
+    </section>
+  </div>
+
+  <mythosCardDeck ref="deck" />
+</div>
+
   </div>
 </template>
 
@@ -212,7 +224,26 @@ export default {
   .mythosCardScroll{
 overflow-x: hidden;
 overflow-y: auto;
+max-height: 240px;
   }
+
+  .gameBoard {
+  display: grid;
+  grid-template-columns: 260px 1fr 260px; /* 좌/중/우 폭 */
+  gap: 16px;
+  align-items: start;
+}
+
+.leftZone, .centerZone, .rightZone {
+  border: 1px solid #ddd;
+  padding: 12px;
+  min-height: 260px;
+}
+
+.zoneTitle {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
 .twoColBoard {
   display: grid;
   grid-template-columns: 1fr 1fr;
