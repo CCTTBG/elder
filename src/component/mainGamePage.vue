@@ -33,39 +33,53 @@
         <b>더 이상 뽑을 카드가 없습니다. (Hard까지 소진)</b>
       </div>
 
-      <!-- 기존 2열(일반/지속) 보드는 그대로 중앙에 둠 -->
-      <div class="twoColBoard mythosCardScroll" style="margin-top:16px;">
-        <div class="head">일반</div>
-        <div class="head">지속</div>
+      <div class=" mythosCardScroll" style="margin-top:16px;">
+      <div class="head">일반</div>
 
-        <div v-for="card in drawnCards" :key="card.id" class="row">
-          <div class="cell">
-            <template v-if="!card.Ongoing">
-              <span>{{ card.drawTurn }} 턴</span>
-              <b>{{ card.id }}</b> ({{ card.color }})
-              <div>효과: {{ card.effect }}</div>
-              <button>해결</button>
-            </template>
-          </div>
+      <div v-for="card in normalCards" :key="card.id" class="row">
+        <div class="cell">
+          <span>{{ card.drawTurn }} 턴</span>
+          <b>{{ card.id }}</b> ({{ card.color }})
+          <div>효과: {{ card.effect }}</div>
+          <button @click="goTomb(card)">해결</button>
+        </div>
+      </div>
+    </div>
+    </section>
 
-          <div class="cell">
-            <template v-if="card.Ongoing">
-              <span>{{ card.drawTurn }} 턴</span>
-              <b>{{ card.id }}</b> ({{ card.color }})
-              <div>효과: {{ card.effect }}</div>
-              <div class="ongoingText">지속: {{ card.OngoingEffect }}</div>
-              <button>해결</button>
-            </template>
-          </div>
+    <section class="rightZone">
+      <div class="zoneTitle">지속 카드 zone</div>
+
+      <div v-if="ongoingCards.length === 0" class="empty">
+        현재 지속 카드 없음
+      </div>
+
+      <div v-else class="mythosCardScroll">
+        <div v-for="card in ongoingCards" :key="card.id" class="ongoingCard">
+          <span>{{ card.drawTurn }} 턴</span>
+          <b>{{ card.id }}</b> ({{ card.color }})
+          <div>효과: {{ card.effect }}</div>
+          <div class="ongoingText">지속: {{ card.OngoingEffect }}</div>
+          <button @click="goTomb(card)">해결</button>
         </div>
       </div>
     </section>
 
-    <!-- 우측: “지속 카드 zone” 같은 별도 박스(지금은 비워도 됨) -->
-    <section class="rightZone">
-      <div class="zoneTitle">지속 카드 zone</div>
-      <!-- 오늘은 일단 박스만 만들어두고, 다음에 여기에 ongoing만 따로 렌더링해도 됨 -->
+    <section class="tombZone">
+      <div class="zoneTitle">버린 신화더미</div>
+
+      <div v-if="tombCards.length === 0">아직 없음</div>
+
+      <div v-else>
+        <div v-for="card in tombCards" :key="card.id + '-' + card.drawTurn" class="cell">
+          <span>{{ card.drawTurn }} 턴</span>
+          <b>{{ card.id }}</b> ({{ card.color }})
+          <div>효과: {{ card.effect }}</div>
+          <div v-if="card.Ongoing" class="ongoingText">지속: {{ card.OngoingEffect }}</div>
+        </div>
+      </div>
     </section>
+
   </div>
 
   <mythosCardDeck ref="deck" />
@@ -96,6 +110,8 @@ export default {
       },
 
       drawnCards: [],
+      tombCards:[],
+
       usedIds: new Set(),
 
       isGameOver: false,
@@ -110,6 +126,13 @@ export default {
     currentStage() {
       return this.stageOrder[this.stageIdx]
     },
+
+    normalCards() {
+      return this.drawnCards.filter(c => !c.Ongoing)
+    },
+    ongoingCards() {
+      return this.drawnCards.filter(c => c.Ongoing)
+    },
   },
 
   watch: {
@@ -122,6 +145,10 @@ export default {
   },
 
   methods: {
+    goTomb(card){
+      this.tombCards.push({...card})
+      this.drawnCards = this.drawnCards.filter(c => c.id !== card.id)
+    },
     resetGameState() {
       this.mythosTurns = 0
       this.stageIdx = 0
@@ -192,7 +219,6 @@ export default {
         usedIds: this.usedIds,
       })
 
-      // DB에서 해당 조건의 카드가 더 이상 없으면(중복 제외 등) “디자인상 오류”임
       if (!card) {
         // 여기서는 게임오버 처리 대신, 우선 멈추게 함.
         // 필요하면 "다른 색을 다시 뽑기" 같은 보정 로직도 가능.
@@ -200,12 +226,12 @@ export default {
         this.isGameOver = true
         return
       }
-          // ✅ 이번에 뽑힌 “턴 번호”
+          // 이번에 뽑힌 “턴 번호”
       const turn = this.mythosTurns + 1
 
-      // ✅ 원본 객체 공유 방지 + 카드에 턴 정보 부여
+      //  원본 객체 공유 방지 + 카드에 턴 정보 부여
       const cardWithTurn = { ...card, drawTurn: turn }
-      // ✅ 메인이 상태를 업데이트 (단일 원천)
+      //  메인이 상태를 업데이트 (단일 원천)
 
       this.drawnCards.push(cardWithTurn)
       this.usedIds.add(card.id)
@@ -229,7 +255,7 @@ max-height: 240px;
 
   .gameBoard {
   display: grid;
-  grid-template-columns: 260px 1fr 260px; /* 좌/중/우 폭 */
+  grid-template-columns: 260px 260px 260px;
   gap: 16px;
   align-items: start;
 }
