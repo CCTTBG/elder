@@ -246,54 +246,6 @@ export default {
 }
 </script>
 
-<style>
-  .mythosCardScroll{
-overflow-x: hidden;
-overflow-y: auto;
-max-height: 240px;
-  }
+<style src="../assets/css/maingame.css">
 
-  .gameBoard {
-  display: grid;
-  grid-template-columns: 260px 260px 260px;
-  gap: 16px;
-  align-items: start;
-}
-
-.leftZone, .centerZone, .rightZone {
-  border: 1px solid #ddd;
-  padding: 12px;
-  min-height: 260px;
-}
-
-.zoneTitle {
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-.twoColBoard {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 32px;
-}
-
-.head {
-  font-weight: 700;
-  padding: 8px 0;
-  border-bottom: 2px solid #ddd;
-}
-
-.row {
-  display: contents;
-}
-
-.cell {
-  min-height: 56px;
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.ongoingText {
-  color: #c00;
-  white-space: nowrap;
-}
 </style>
